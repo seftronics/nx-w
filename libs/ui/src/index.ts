@@ -1,1 +1,3 @@
-export { Button, buttonVariants } from './components/ui/button';
+export { 
+  Button, buttonVariants } from './atoms/button/button';
+export { Input } from './atoms/input/input';

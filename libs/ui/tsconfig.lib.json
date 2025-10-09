@@ -12,9 +12,12 @@
     ],
     "rootDir": "src",
     "jsx": "react-jsx",
-    "module": "esnext",
+    "module": "ESNext",
     "moduleResolution": "bundler",
-    "tsBuildInfoFile": "dist/tsconfig.lib.tsbuildinfo"
+    "tsBuildInfoFile": "dist/tsconfig.lib.tsbuildinfo",
+    "paths": {
+      "@nx-w/utils": ["./../utils/src/index.ts"]
+    }
   },
   "exclude": [
     "out-tsc",
@@ -29,7 +32,11 @@
     "**/*.test.jsx",
     "eslint.config.js",
     "eslint.config.cjs",
-    "eslint.config.mjs"
+    "eslint.config.mjs",
+    "**/*.stories.ts",
+    "**/*.stories.js",
+    "**/*.stories.jsx",
+    "**/*.stories.tsx"
   ],
   "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx"],
   "references": [

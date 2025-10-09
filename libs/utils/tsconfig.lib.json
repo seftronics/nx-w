@@ -3,12 +3,15 @@
   "compilerOptions": {
     "allowImportingTsExtensions": true,
     "outDir": "dist",
+    "rootDir": "src",
     "tsBuildInfoFile": "dist/tsconfig.lib.tsbuildinfo",
     "emitDeclarationOnly": true,
     "forceConsistentCasingInFileNames": true,
     "types": ["node"],
-    "module": "NodeNext"
+    "module": "NodeNext",
+    "moduleResolution": "nodenext"
   },
   "include": ["src/**/*.ts"],
+  "exclude": ["../../ui"],
   "references": []
 }

@@ -1,16 +1,35 @@
 {
-  "name": "utils",
+  "name": "ui",
   "projectType": "library",
-  "root": "libs/utils",
-  "sourceRoot": "libs/utils/src",
+  "root": "libs/ui",
+  "sourceRoot": "libs/ui/src",
   "targets": {
     "build": {
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/libs/utils",
-        "main": "libs/utils/src/index.ts",
-        "tsConfig": "libs/utils/tsconfig.lib.json"
+        "outputPath": "dist/libs/ui",
+        "main": "libs/ui/src/index.ts",
+        "tsConfig": "libs/ui/tsconfig.lib.json"
+      }
+    },
+    "storybook": {
+      "executor": "@nx/storybook:storybook",
+      "options": {
+        "uiFramework": "@storybook/react",
+        "configDir": "libs/ui/.storybook",
+        "port": 4400,
+        "projectBuildConfig": "ui:build"
+      }
+    },
+    "build-storybook": {
+      "executor": "@nx/storybook:build",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "uiFramework": "@storybook/react",
+        "configDir": "libs/ui/.storybook",
+        "outputDir": "dist/storybook/ui",
+        "projectBuildConfig": "ui:build"
       }
     }
   },
