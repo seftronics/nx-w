@@ -16,6 +16,10 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["@nx-w/source"]
+    "customConditions": ["@nx-w/source"],
+    "paths": {
+      "@nx-w/ui": ["./libs/ui/src/index.ts"],
+      "@nx-w/utils": ["./libs/utils/src/index.ts"]
+    }
   }
 }
