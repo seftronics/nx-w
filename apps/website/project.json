@@ -1,0 +1,23 @@
+{
+  "name": "website",
+  "projectType": "application",
+  "root": "apps/website",
+  "sourceRoot": "apps/website/src",
+  "targets": {
+    "serve": {
+      "executor": "@nx/next:server",
+      "options": {
+        "buildTarget": "website:build",
+        "dev": true
+      }
+    },
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/website"
+      }
+    }
+  },
+  "tags": []
+}
