@@ -1,3 +1,4 @@
 export { 
-  Button, buttonVariants } from './atoms/button/button';
-export { Input } from './atoms/input/input';
+  Button, buttonVariants } from './atoms/button/Button';
+export { Input } from './atoms/input/Input';
+export { Carousel } from './organisms/carousel/carousel';

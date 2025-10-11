@@ -1,1 +1,1 @@
-export * from "./dom/cn.ts";
+export * from "./dom/cn";

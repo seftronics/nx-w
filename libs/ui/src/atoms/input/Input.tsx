@@ -1,6 +1,7 @@
+"use client"
+
 import * as React from "react"
 
-// eslint-disable-next-line @nx/enforce-module-boundaries
 import { cn } from "@nx-w/utils"
 
 function Input({ className, type, ...props }: React.ComponentProps<"input">) {

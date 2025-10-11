@@ -1,0 +1,357 @@
+[16:06:22.490] [INFO] Storybook Upgrade - v9.1.10
+[16:06:22.499] [INFO] detect-projects-spinner-start: Detecting projects...
+[16:06:22.501] [DEBUG] Finding Storybook projects...
+[16:06:22.803] [DEBUG] Found 1 Storybook projects
+[16:06:22.804] [INFO] detect-projects-spinner: Detecting projects: 1 projects
+[16:06:22.804] [DEBUG] Getting Storybook data...
+[16:06:22.804] [DEBUG] Getting Storybook info...
+[16:06:22.804] [DEBUG] Loading main config...
+[16:06:22.855] [DEBUG] Getting stories paths...
+[16:06:22.865] [DEBUG] Getting package manager...
+[16:06:23.059] [DEBUG] Getting Storybook version...
+[16:06:23.060] [DEBUG] /libs/ui/.storybook - Validating before version... 8.6.14
+[16:06:23.060] [DEBUG] /libs/ui/.storybook - Validating upgrade compatibility...
+[16:06:23.060] [DEBUG] /libs/ui/.storybook - Fetching NPM version information...
+[16:06:23.060] [DEBUG] Getting CLI versions from NPM for storybook...
+[16:06:23.061] [DEBUG] Getting CLI versions from NPM for storybook@next...
+[16:06:23.836] [DEBUG] /libs/ui/.storybook - Evaluating blockers...
+[16:06:23.838] [DEBUG] Getting installed version for @storybook/experimental-addon-test...
+[16:06:24.077] [INFO] detect-projects-spinner-stop: 1 project detected
+[16:06:24.078] [DEBUG] Found 1 valid projects and 0 error projects
+[16:06:24.078] [INFO] Upgrading from 8.6.14 to 9.1.10
+[16:06:24.086] [INFO] upgrade-dependencies-task-start: Fetching versions to update package.json files..
+[16:06:24.086] [DEBUG] Updating dependencies in /libs/ui/.storybook...
+[16:06:24.093] [INFO] upgrade-dependencies-task: /libs/ui/package.json
+/package.json
+[16:06:24.093] [DEBUG] {
+  "upgradedDependencies": []
+}
+[16:06:24.093] [DEBUG] {
+  "upgradedDevDependencies": []
+}
+[16:06:24.093] [DEBUG] {
+  "upgradedPeerDependencies": []
+}
+[16:06:24.094] [DEBUG] {
+  "upgradedDependencies": []
+}
+[16:06:24.094] [DEBUG] {
+  "upgradedDevDependencies": [
+    "@storybook/addon-themes@9.1.10",
+    "@storybook/builder-vite@9.1.10",
+    "@storybook/react@^9.1.10",
+    "@storybook/react-vite@^9.1.10"
+  ]
+}
+[16:06:24.094] [DEBUG] {
+  "upgradedPeerDependencies": []
+}
+[16:06:24.095] [DEBUG] Getting CLI versions from NPM for @storybook/addon-themes...
+[16:06:25.854] [DEBUG] Getting CLI versions from NPM for @storybook/builder-vite...
+[16:06:26.417] [DEBUG] Getting CLI versions from NPM for @storybook/react...
+[16:06:26.933] [DEBUG] Getting CLI versions from NPM for @storybook/react-vite...
+[16:06:27.475] [INFO] upgrade-dependencies-task-success: Updated package versions in package.json files
+[16:06:27.475] [INFO] detect-automigrations-task-start: Detecting automigrations...
+[16:06:27.476] [DEBUG] Starting automigration collection across 1 projects and 16 fixes...
+[16:06:27.483] [INFO] detect-automigrations-task: Checking automigrations for /libs/ui/.storybook...
+[16:06:27.483] [DEBUG] Processing project: /libs/ui/.storybook
+[16:06:27.483] [DEBUG] Checking fix eslintPlugin for project /libs/ui/.storybook...
+[16:06:27.485] [DEBUG] Checking fix addon-mdx-gfm-remove for project /libs/ui/.storybook...
+[16:06:27.486] [DEBUG] Checking fix addon-storysource-code-panel for project /libs/ui/.storybook...
+[16:06:27.486] [DEBUG] Checking fix upgrade-storybook-related-dependencies for project /libs/ui/.storybook...
+[16:06:27.486] [DEBUG] Checking for incompatible storybook packages...
+[16:06:27.487] [DEBUG] Getting installed version for @nx/storybook...
+[16:06:27.488] [DEBUG] Getting installed version for @storybook/addon-essentials...
+[16:06:27.768] [DEBUG] Getting CLI versions from NPM for @nx/storybook...
+[16:06:27.769] [DEBUG] Getting CLI versions from NPM for @storybook/addon-essentials...
+[16:06:29.696] [DEBUG] Checking fix initial-globals for project /libs/ui/.storybook...
+[16:06:29.711] [DEBUG] Checking fix addon-globals-api for project /libs/ui/.storybook...
+[16:06:29.713] [DEBUG] Checking fix addon-a11y-addon-test for project /libs/ui/.storybook...
+[16:06:29.713] [DEBUG] Checking fix consolidated-imports for project /libs/ui/.storybook...
+[16:06:29.714] [DEBUG] Checking fix addon-experimental-test for project /libs/ui/.storybook...
+[16:06:29.714] [DEBUG] Using cached installed version for @storybook/experimental-addon-test...
+[16:06:29.714] [DEBUG] Checking fix rnstorybook-config for project /libs/ui/.storybook...
+[16:06:29.714] [DEBUG] Checking fix remove-addon-interactions for project /libs/ui/.storybook...
+[16:06:29.714] [DEBUG] Checking fix renderer-to-framework for project /libs/ui/.storybook...
+[16:06:29.714] [DEBUG] Checking fix remove-essential-addons for project /libs/ui/.storybook...
+[16:06:29.715] [DEBUG] Checking fix addon-a11y-parameters for project /libs/ui/.storybook...
+[16:06:29.715] [DEBUG] Checking fix remove-docs-autodocs for project /libs/ui/.storybook...
+[16:06:29.716] [DEBUG] Checking fix wrap-require for project /libs/ui/.storybook...
+[16:06:29.725] [INFO] detect-automigrations-task: 
+Automigrations detected:
+[16:06:29.733] [INFO] detect-automigrations-task: ✔ eslintPlugin
+[16:06:29.741] [INFO] detect-automigrations-task: ✔ renderer-to-framework
+[16:06:29.749] [INFO] detect-automigrations-task: ✔ remove-essential-addons
+[16:06:29.755] [INFO] detect-automigrations-task: ✔ wrap-require
+[16:06:29.755] [INFO] detect-automigrations-task-success: 4 automigration(s) detected
+[16:06:52.503] [PROMPT] Select automigrations to run {"choice":["renderer-to-framework","remove-essential-addons","wrap-require","eslintPlugin"]}
+[16:06:52.504] [INFO] automigrate-/libs/ui/.storybook-task-start: Running automigrations for /libs/ui/.storybook
+[16:06:52.505] [DEBUG] Adding dependencies: eslint-plugin-storybook@9.1.10
+[16:06:52.505] [DEBUG] Getting CLI versions from NPM for eslint-plugin-storybook...
+[16:06:53.088] [DEBUG] Detected flat config at /Users/yudha/Work/Clients/nx-w/libs/ui/eslint.config.mjs
+[16:06:53.110] [INFO] automigrate-/libs/ui/.storybook-task: ✔ eslintPlugin
+[16:06:53.111] [DEBUG] 
+Migrating @storybook/react to @storybook/react-vite
+[16:06:53.112] [DEBUG] Updating package.json files...
+[16:06:53.119] [INFO] automigrate-/libs/ui/.storybook-task: ✔ renderer-to-framework
+[16:06:53.121] [DEBUG] Uninstalling @storybook/addon-essentials
+[16:06:53.121] [DEBUG] Removing '@storybook/addon-essentials' from main.js addons field.
+[16:06:53.124] [DEBUG] Getting Storybook info...
+[16:06:53.124] [DEBUG] Loading main config...
+[16:06:53.128] [DEBUG] Getting stories paths...
+[16:06:53.129] [DEBUG] Getting package manager...
+[16:06:53.132] [DEBUG] Getting Storybook version...
+[16:06:53.141] [INFO] automigrate-/libs/ui/.storybook-task: Verifying @storybook/addon-docs
+[16:06:53.147] [INFO] automigrate-/libs/ui/.storybook-task: Installing @storybook/addon-docs@9.1.10
+[16:06:53.147] [DEBUG] Getting CLI versions from NPM for @storybook/addon-docs...
+[16:06:53.755] [INFO] automigrate-/libs/ui/.storybook-task: Adding '@storybook/addon-docs' to the "addons" field in
+/Users/yudha/Work/Clients/nx-w/libs/ui/.storybook/main.ts
+[16:06:53.765] [INFO] automigrate-/libs/ui/.storybook-task: ✔ remove-essential-addons
+[16:06:53.776] [INFO] automigrate-/libs/ui/.storybook-task: ✔ wrap-require
+[16:06:53.776] [INFO] automigrate-/libs/ui/.storybook-task-success: Completed automigrations for /libs/ui/.storybook
+[16:06:53.776] [INFO] Installing dependencies...
+[16:06:53.776] [INFO] install-dependencies-task-start: Installing dependencies...
+[16:06:54.049] [INFO] WARN  `node_modules` is present. Lockfile only installation will make it out-of-date
+[16:06:54.064] [INFO] install-dependencies-task: WARN  `node_modules` is present. Lockfile only installation will make it
+out-of-date
+[16:06:54.153] [INFO] Progress: resolved 1, reused 0, downloaded 0, added 0
+[16:06:54.163] [INFO] install-dependencies-task: Progress: resolved 1, reused 0, downloaded 0, added 0
+[16:06:55.155] [INFO] Progress: resolved 39, reused 0, downloaded 0, added 0
+[16:06:55.169] [INFO] install-dependencies-task: Progress: resolved 39, reused 0, downloaded 0, added 0
+[16:06:56.161] [INFO] Progress: resolved 53, reused 0, downloaded 0, added 0
+[16:06:56.176] [INFO] install-dependencies-task: Progress: resolved 53, reused 0, downloaded 0, added 0
+[16:06:57.155] [INFO] Progress: resolved 67, reused 0, downloaded 0, added 0
+[16:06:57.167] [INFO] install-dependencies-task: Progress: resolved 67, reused 0, downloaded 0, added 0
+[16:06:58.157] [INFO] Progress: resolved 87, reused 0, downloaded 0, added 0
+[16:06:58.171] [INFO] install-dependencies-task: Progress: resolved 87, reused 0, downloaded 0, added 0
+[16:06:59.159] [INFO] Progress: resolved 106, reused 0, downloaded 0, added 0
+[16:06:59.180] [INFO] install-dependencies-task: Progress: resolved 106, reused 0, downloaded 0, added 0
+[16:07:00.160] [INFO] Progress: resolved 111, reused 0, downloaded 0, added 0
+[16:07:00.172] [INFO] install-dependencies-task: Progress: resolved 111, reused 0, downloaded 0, added 0
+[16:07:01.161] [INFO] Progress: resolved 112, reused 0, downloaded 0, added 0
+[16:07:01.181] [INFO] install-dependencies-task: Progress: resolved 112, reused 0, downloaded 0, added 0
+[16:07:02.163] [INFO] Progress: resolved 113, reused 0, downloaded 0, added 0
+[16:07:02.185] [INFO] install-dependencies-task: Progress: resolved 113, reused 0, downloaded 0, added 0
+[16:07:03.167] [INFO] Progress: resolved 195, reused 0, downloaded 0, added 0
+[16:07:03.175] [INFO] install-dependencies-task: Progress: resolved 195, reused 0, downloaded 0, added 0
+[16:07:04.168] [INFO] Progress: resolved 607, reused 0, downloaded 0, added 0
+[16:07:04.181] [INFO] install-dependencies-task: Progress: resolved 607, reused 0, downloaded 0, added 0
+[16:07:05.169] [INFO] Progress: resolved 1268, reused 0, downloaded 0, added 0
+[16:07:05.177] [INFO] install-dependencies-task: Progress: resolved 1268, reused 0, downloaded 0, added 0
+[16:07:06.169] [INFO] Progress: resolved 1964, reused 0, downloaded 0, added 0
+[16:07:06.186] [INFO] install-dependencies-task: Progress: resolved 1964, reused 0, downloaded 0, added 0
+[16:07:06.963] [INFO] WARN  7 deprecated subdependencies found: @types/minimatch@6.0.0, abab@2.0.6, domexception@4.0.0, glob@7.2.3, glob@8.1.0, inflight@1.0.6, stable@0.1.8
+[16:07:06.972] [INFO] install-dependencies-task: WARN  7 deprecated subdependencies found: @types/minimatch@6.0.0, abab@2.0.6,
+domexception@4.0.0, glob@7.2.3, glob@8.1.0, inflight@1.0.6, stable@0.1.8
+[16:07:07.045] [INFO] Progress: resolved 2004, reused 0, downloaded 0, added 0, done
+[16:07:07.052] [INFO] install-dependencies-task: Progress: resolved 2004, reused 0, downloaded 0, added 0, done
+[16:07:07.053] [INFO] WARN  Issues with peer dependencies found
+.
+├─┬ @storybook/addon-themes 9.1.10
+│ └── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+├─┬ @storybook/builder-vite 9.1.10
+│ ├── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+│ └─┬ @storybook/csf-plugin 9.1.10
+│   └── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+└─┬ @storybook/react-vite 9.1.10
+  ├── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+  └─┬ @storybook/react 9.1.10
+    ├── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+    └─┬ @storybook/react-dom-shim 9.1.10
+      └── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+
+libs/ui
+├─┬ eslint-plugin-storybook 9.1.10
+│ └── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+└─┬ @storybook/addon-docs 9.1.10
+  └── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+[16:07:07.063] [INFO] install-dependencies-task: WARN  Issues with peer dependencies found
+.
+├─┬ @storybook/addon-themes 9.1.10
+│ └── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+├─┬ @storybook/builder-vite 9.1.10
+│ ├── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+│ └─┬ @storybook/csf-plugin 9.1.10
+│   └── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+└─┬ @storybook/react-vite 9.1.10
+├── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+└─┬ @storybook/react 9.1.10
+├── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+└─┬ @storybook/react-dom-shim 9.1.10
+└── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+
+libs/ui
+├─┬ eslint-plugin-storybook 9.1.10
+│ └── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+└─┬ @storybook/addon-docs 9.1.10
+└── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+[16:07:07.161] [INFO] Packages: +10 -57
+++++++++++---------------------------------------------------------
+[16:07:07.176] [INFO] install-dependencies-task: Packages: +10 -57
+++++++++++---------------------------------------------------------
+[16:07:12.097] [INFO] Done in 18.2s using pnpm v10.14.0
+[16:07:12.117] [INFO] install-dependencies-task: Done in 18.2s using pnpm v10.14.0
+[16:07:12.195] [INFO] Dependencies installed
+[16:07:12.195] [INFO] install-dependencies-task-success: Dependencies installed
+[16:07:12.196] [WARN] Since you are in a monorepo, we advise you to deduplicate your dependencies. We can do this for you but it might take some time.
+[16:07:16.702] [PROMPT] Execute pnpm run dedupe? {"choice":true}
+[16:07:16.706] [INFO] Deduplicating dependencies...
+[16:07:16.708] [INFO] dedupe-dependencies-task-start: Deduplicating dependencies...
+[16:07:17.378] [INFO] Progress: resolved 1, reused 0, downloaded 0, added 0
+[16:07:17.388] [INFO] dedupe-dependencies-task: Progress: resolved 1, reused 0, downloaded 0, added 0
+[16:07:18.379] [INFO] Progress: resolved 30, reused 28, downloaded 1, added 0
+[16:07:18.391] [INFO] dedupe-dependencies-task: Progress: resolved 30, reused 28, downloaded 1, added 0
+[16:07:19.379] [INFO] Progress: resolved 44, reused 40, downloaded 1, added 0
+[16:07:19.391] [INFO] dedupe-dependencies-task: Progress: resolved 44, reused 40, downloaded 1, added 0
+[16:07:20.380] [INFO] Progress: resolved 61, reused 57, downloaded 2, added 0
+[16:07:20.396] [INFO] dedupe-dependencies-task: Progress: resolved 61, reused 57, downloaded 2, added 0
+[16:07:21.424] [INFO] Progress: resolved 70, reused 68, downloaded 2, added 0
+[16:07:21.606] [INFO] dedupe-dependencies-task: Progress: resolved 70, reused 68, downloaded 2, added 0
+[16:07:22.390] [INFO] Progress: resolved 93, reused 89, downloaded 2, added 0
+[16:07:22.435] [INFO] dedupe-dependencies-task: Progress: resolved 93, reused 89, downloaded 2, added 0
+[16:07:23.393] [INFO] Progress: resolved 109, reused 105, downloaded 2, added 0
+[16:07:23.440] [INFO] dedupe-dependencies-task: Progress: resolved 109, reused 105, downloaded 2, added 0
+[16:07:24.392] [INFO] Progress: resolved 112, reused 108, downloaded 2, added 0
+[16:07:24.406] [INFO] dedupe-dependencies-task: Progress: resolved 112, reused 108, downloaded 2, added 0
+[16:07:25.393] [INFO] Progress: resolved 113, reused 111, downloaded 2, added 0
+[16:07:25.404] [INFO] dedupe-dependencies-task: Progress: resolved 113, reused 111, downloaded 2, added 0
+[16:07:26.450] [INFO] Progress: resolved 115, reused 111, downloaded 2, added 0
+[16:07:26.465] [INFO] dedupe-dependencies-task: Progress: resolved 115, reused 111, downloaded 2, added 0
+[16:07:27.452] [INFO] Progress: resolved 176, reused 167, downloaded 2, added 0
+[16:07:27.470] [INFO] dedupe-dependencies-task: Progress: resolved 176, reused 167, downloaded 2, added 0
+[16:07:28.689] [INFO] Progress: resolved 223, reused 213, downloaded 2, added 0
+[16:07:28.750] [INFO] dedupe-dependencies-task: Progress: resolved 223, reused 213, downloaded 2, added 0
+[16:07:29.678] [INFO] Progress: resolved 314, reused 294, downloaded 2, added 0
+[16:07:29.721] [INFO] dedupe-dependencies-task: Progress: resolved 314, reused 294, downloaded 2, added 0
+[16:07:30.677] [INFO] Progress: resolved 350, reused 332, downloaded 2, added 0
+[16:07:30.704] [INFO] dedupe-dependencies-task: Progress: resolved 350, reused 332, downloaded 2, added 0
+[16:07:31.683] [INFO] Progress: resolved 351, reused 333, downloaded 2, added 0
+[16:07:31.702] [INFO] dedupe-dependencies-task: Progress: resolved 351, reused 333, downloaded 2, added 0
+[16:07:32.699] [INFO] Progress: resolved 361, reused 341, downloaded 2, added 0
+[16:07:32.771] [INFO] dedupe-dependencies-task: Progress: resolved 361, reused 341, downloaded 2, added 0
+[16:07:33.899] [INFO] Progress: resolved 379, reused 357, downloaded 2, added 0
+[16:07:33.910] [INFO] dedupe-dependencies-task: Progress: resolved 379, reused 357, downloaded 2, added 0
+[16:07:34.986] [INFO] Progress: resolved 416, reused 388, downloaded 2, added 0
+[16:07:35.020] [INFO] dedupe-dependencies-task: Progress: resolved 416, reused 388, downloaded 2, added 0
+[16:07:36.001] [INFO] Progress: resolved 484, reused 454, downloaded 2, added 0
+[16:07:36.027] [INFO] dedupe-dependencies-task: Progress: resolved 484, reused 454, downloaded 2, added 0
+[16:07:37.071] [INFO] Progress: resolved 519, reused 471, downloaded 2, added 0
+[16:07:37.096] [INFO] dedupe-dependencies-task: Progress: resolved 519, reused 471, downloaded 2, added 0
+[16:07:38.072] [INFO] Progress: resolved 636, reused 588, downloaded 2, added 0
+[16:07:38.088] [INFO] dedupe-dependencies-task: Progress: resolved 636, reused 588, downloaded 2, added 0
+[16:07:39.083] [INFO] Progress: resolved 764, reused 715, downloaded 2, added 0
+[16:07:39.107] [INFO] dedupe-dependencies-task: Progress: resolved 764, reused 715, downloaded 2, added 0
+[16:07:40.082] [INFO] Progress: resolved 916, reused 869, downloaded 2, added 0
+[16:07:40.097] [INFO] dedupe-dependencies-task: Progress: resolved 916, reused 869, downloaded 2, added 0
+[16:07:41.083] [INFO] Progress: resolved 1142, reused 1023, downloaded 2, added 0
+[16:07:41.098] [INFO] dedupe-dependencies-task: Progress: resolved 1142, reused 1023, downloaded 2, added 0
+[16:07:42.197] [INFO] Progress: resolved 1332, reused 1177, downloaded 2, added 0
+[16:07:42.292] [INFO] dedupe-dependencies-task: Progress: resolved 1332, reused 1177, downloaded 2, added 0
+[16:07:43.192] [INFO] Progress: resolved 1547, reused 1374, downloaded 2, added 0
+[16:07:43.206] [INFO] dedupe-dependencies-task: Progress: resolved 1547, reused 1374, downloaded 2, added 0
+[16:07:44.191] [INFO] Progress: resolved 1706, reused 1524, downloaded 2, added 0
+[16:07:44.205] [INFO] dedupe-dependencies-task: Progress: resolved 1706, reused 1524, downloaded 2, added 0
+[16:07:45.216] [INFO] Progress: resolved 1822, reused 1638, downloaded 2, added 0
+[16:07:45.241] [INFO] dedupe-dependencies-task: Progress: resolved 1822, reused 1638, downloaded 2, added 0
+[16:07:46.266] [INFO] Progress: resolved 1822, reused 1640, downloaded 2, added 0
+[16:07:46.306] [INFO] dedupe-dependencies-task: Progress: resolved 1822, reused 1640, downloaded 2, added 0
+[16:07:47.274] [INFO] Progress: resolved 1860, reused 1677, downloaded 2, added 0
+[16:07:47.323] [INFO] dedupe-dependencies-task: Progress: resolved 1860, reused 1677, downloaded 2, added 0
+[16:07:49.543] [INFO] Progress: resolved 1937, reused 1731, downloaded 2, added 0
+[16:07:49.622] [INFO] dedupe-dependencies-task: Progress: resolved 1937, reused 1731, downloaded 2, added 0
+[16:07:50.630] [INFO] Progress: resolved 1955, reused 1749, downloaded 2, added 0
+[16:07:50.665] [INFO] dedupe-dependencies-task: Progress: resolved 1955, reused 1749, downloaded 2, added 0
+[16:07:52.069] [INFO] Progress: resolved 1965, reused 1759, downloaded 2, added 0
+[16:07:52.090] [INFO] dedupe-dependencies-task: Progress: resolved 1965, reused 1759, downloaded 2, added 0
+[16:07:53.067] [INFO] Progress: resolved 2002, reused 1771, downloaded 2, added 0
+[16:07:53.079] [INFO] dedupe-dependencies-task: Progress: resolved 2002, reused 1771, downloaded 2, added 0
+[16:07:53.704] [INFO] WARN  7 deprecated subdependencies found: @types/minimatch@6.0.0, abab@2.0.6, domexception@4.0.0, glob@7.2.3, glob@8.1.0, inflight@1.0.6, stable@0.1.8
+[16:07:53.720] [INFO] dedupe-dependencies-task: WARN  7 deprecated subdependencies found: @types/minimatch@6.0.0, abab@2.0.6,
+domexception@4.0.0, glob@7.2.3, glob@8.1.0, inflight@1.0.6, stable@0.1.8
+[16:07:53.763] [INFO] Packages: -57
+---------------------------------------------------------
+[16:07:53.774] [INFO] dedupe-dependencies-task: Packages: -57
+---------------------------------------------------------
+[16:07:54.058] [INFO] Progress: resolved 2004, reused 1773, downloaded 2, added 7, done
+[16:07:54.066] [INFO] dedupe-dependencies-task: Progress: resolved 2004, reused 1773, downloaded 2, added 7, done
+[16:07:55.511] [INFO] WARN  Issues with peer dependencies found
+.
+├─┬ @storybook/addon-themes 9.1.10
+│ └── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+├─┬ @storybook/builder-vite 9.1.10
+│ └── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+└─┬ @storybook/react-vite 9.1.10
+  ├── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+  └─┬ @storybook/react 9.1.10
+    └── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+
+libs/ui
+├─┬ eslint-plugin-storybook 9.1.10
+│ └── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+└─┬ @storybook/addon-docs 9.1.10
+  ├── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+  ├─┬ @storybook/react-dom-shim 9.1.10
+  │ └── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+  └─┬ @storybook/csf-plugin 9.1.10
+    └── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+[16:07:55.541] [INFO] dedupe-dependencies-task: WARN  Issues with peer dependencies found
+.
+├─┬ @storybook/addon-themes 9.1.10
+│ └── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+├─┬ @storybook/builder-vite 9.1.10
+│ └── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+└─┬ @storybook/react-vite 9.1.10
+├── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+└─┬ @storybook/react 9.1.10
+└── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+
+libs/ui
+├─┬ eslint-plugin-storybook 9.1.10
+│ └── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+└─┬ @storybook/addon-docs 9.1.10
+├── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+├─┬ @storybook/react-dom-shim 9.1.10
+│ └── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+└─┬ @storybook/csf-plugin 9.1.10
+└── ✕ unmet peer storybook@^9.1.10: found 8.6.14
+[16:07:55.544] [INFO] ╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: @parcel/watcher, @swc/core, @tailwindcss/oxide,     │
+│   esbuild, nx, sharp, unrs-resolver.                                         │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[16:07:55.561] [INFO] dedupe-dependencies-task: ╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: @parcel/watcher, @swc/core, @tailwindcss/oxide,     │
+│   esbuild, nx, sharp, unrs-resolver.                                         │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[16:07:55.739] [INFO] Dependencies deduplicated
+[16:07:55.739] [INFO] dedupe-dependencies-task-success: Dependencies deduplicated
+[16:07:55.745] [INFO] Checking the health of your project(s)..
+[16:07:56.286] [WARN] /libs/ui/.storybook: 1 issue found
+[16:07:56.293] [INFO] The "storybook" package was not found in your package.json.
+Installing "storybook" as a direct dev dependency in your package.json is required.
+[16:07:56.293] [INFO] Missing Storybook Dependency
+[16:07:56.300] [INFO] The "storybook" package was not found in your package.json.
+Installing "storybook" as a direct dev dependency in your package.json is required.
+[16:07:56.307] [INFO] Storybook doctor is complete!
+[16:07:56.314] [INFO] You can always recheck the health of your project(s) by running:
+npx storybook doctor
+[16:07:56.323] [INFO] The upgrade is complete!
+[16:07:56.330] [INFO] Your project(s) have been upgraded successfully, but some issues were found which need your attention, please check Storybook doctor logs above.
+[16:07:56.363] [INFO] If you want to learn more about the automigrations that executed in your project(s), please check the following links:
+
+• eslintPlugin
+• renderer-to-framework
+• remove-essential-addons
+• wrap-require
+[16:07:56.369] [INFO] For a full list of changes, please check our migration guide: https://storybook.js.org/docs/migration-guide?ref=upgrade
+[16:07:56.388] [INFO] Attention: Storybook now collects completely anonymous telemetry regarding usage. This information is used to shape Storybook's roadmap and prioritize features.
+[16:07:56.395] [INFO] You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[16:07:56.402] [INFO] https://storybook.js.org/telemetry
+[16:07:56.409] [INFO] 
