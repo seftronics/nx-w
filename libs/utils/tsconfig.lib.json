@@ -2,7 +2,6 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "../../dist/libs/utils",
-    "rootDir": "src",
     "tsBuildInfoFile": "../../dist/libs/utils/tsconfig.lib.tsbuildinfo",
     "module": "ESNext",
     "moduleResolution": "bundler",
