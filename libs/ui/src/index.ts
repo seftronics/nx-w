@@ -1,3 +1,5 @@
+"use client"
+
 export { 
   Button, buttonVariants } from './atoms/button/Button';
 export { Input } from './atoms/input/Input';

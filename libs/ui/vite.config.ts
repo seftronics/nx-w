@@ -4,6 +4,22 @@ import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
 import * as path from 'path';
 import tailwindcss from '@tailwindcss/vite';
+import type { OutputBundle } from 'rollup';
+
+// Plugin to preserve "use client" directive
+function preserveUseClient() {
+  return {
+    name: 'preserve-use-client',
+    generateBundle(_: unknown, bundle: OutputBundle) {
+      Object.keys(bundle).forEach((fileName) => {
+        const chunk = bundle[fileName];
+        if (chunk.type === 'chunk' && fileName.endsWith('.js')) {
+          chunk.code = `"use client";\n${chunk.code}`;
+        }
+      });
+    },
+  };
+}
 
 export default defineConfig(() => ({
   root: __dirname,
@@ -15,13 +31,8 @@ export default defineConfig(() => ({
       tsconfigPath: path.join(__dirname, 'tsconfig.lib.json'),
     }),
     tailwindcss(),
+    preserveUseClient(),
   ],
-  // Uncomment this if you are using workers.
-  // worker: {
-  //  plugins: [ nxViteTsPaths() ],
-  // },
-  // Configuration for building your library.
-  // See: https://vitejs.dev/guide/build.html#library-mode
   build: {
     outDir: './dist',
     emptyOutDir: true,
@@ -30,16 +41,12 @@ export default defineConfig(() => ({
       transformMixedEsModules: true,
     },
     lib: {
-      // Could also be a dictionary or array of multiple entry points.
       entry: 'src/index.ts',
       name: '@nx-w/ui',
       fileName: 'index',
-      // Change this to the formats you want to support.
-      // Don't forget to update your package.json as well.
       formats: ['es' as const],
     },
     rollupOptions: {
-      // External packages that should not be bundled into your library.
       external: ['react', 'react-dom', 'react/jsx-runtime'],
     },
   },
