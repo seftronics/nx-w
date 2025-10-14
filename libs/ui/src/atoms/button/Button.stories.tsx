@@ -19,7 +19,7 @@ export const ThemedButton: StoryObj = {
     showThemeName: true,
   },
   render: (args) => {
-    const { theme } = useActiveTheme();
+    const theme  = useActiveTheme();
     return <Button {...args} theme={theme ?? fallbackTheme} />;
   },
 };

@@ -9,16 +9,10 @@
   },
   "references": [
     {
-      "path": "./apps/website"
-    },
-    {
       "path": "./libs/ui"
     },
     {
       "path": "./libs/utils"
-    },
-    {
-      "path": "./apps/zikas-dashboard-e2e"
     },
     {
       "path": "./apps/zikas-dashboard"
@@ -31,9 +25,6 @@
     },
     {
       "path": "./libs/providers"
-    },
-    {
-      "path": "./apps/javamas-e2e"
     },
     {
       "path": "./apps/javamas"

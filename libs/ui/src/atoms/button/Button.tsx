@@ -13,7 +13,6 @@ export type ButtonProps = React.ComponentProps<'button'> & {
   theme: Theme;
 };
 
-
 function Button({
   variant = 'default',
   size,

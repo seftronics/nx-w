@@ -367,24 +367,6 @@ importers:
         specifier: 19.0.0
         version: 19.0.0(react@19.0.0)
 
-  apps/javamas-e2e: {}
-
-  apps/website:
-    dependencies:
-      next:
-        specifier: ^15.5.4
-        version: 15.5.4(@babel/core@7.28.4)(@playwright/test@1.56.0)(babel-plugin-macros@3.1.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.93.2)
-      react:
-        specifier: 19.0.0
-        version: 19.0.0
-      react-dom:
-        specifier: 19.0.0
-        version: 19.0.0(react@19.0.0)
-    devDependencies:
-      '@svgr/webpack':
-        specifier: ^8.1.0
-        version: 8.1.0(typescript@5.9.3)
-
   apps/zikas-dashboard:
     dependencies:
       next:
@@ -397,8 +379,6 @@ importers:
         specifier: 19.0.0
         version: 19.0.0(react@19.0.0)
 
-  apps/zikas-dashboard-e2e: {}
-
   libs: {}
 
   libs/config-ui: {}
@@ -406,12 +386,6 @@ importers:
   libs/hooks: {}
 
   libs/providers: {}
-
-  libs/themes:
-    dependencies:
-      tslib:
-        specifier: ^2.3.0
-        version: 2.8.1
 
   libs/ui:
     devDependencies:

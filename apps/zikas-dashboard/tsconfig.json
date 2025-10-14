@@ -54,6 +54,9 @@
   ],
   "references": [
     {
+      "path": "../../libs/hooks"
+    },
+    {
       "path": "../../libs/ui"
     },
     {

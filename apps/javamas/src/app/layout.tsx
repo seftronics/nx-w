@@ -1,4 +1,6 @@
 import './global.css';
+import { ThemeProvider } from '@nx-w/providers';
+import { THEMES } from '@nx-w/config-ui';
 
 export const metadata = {
   title: 'Welcome to javamas',
@@ -12,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+          <ThemeProvider value={THEMES.javamas}>{children}</ThemeProvider>
+      </body>
     </html>
   );
 }
