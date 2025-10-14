@@ -5,10 +5,10 @@ import { Slot } from "@radix-ui/react-slot"
 import { cva, VariantProps } from "class-variance-authority"
 import { PanelLeftIcon } from "lucide-react"
 
-import { useIsMobile } from "../../hooks/use-mobile"
+import { useIsMobile } from '@nx-w/hooks';
 
 import { cn } from "@nx-w/utils"
-import { Button } from "../../atoms/button/Button"
+import { Button } from "../../atoms/button/button"
 import { Input } from "../../atoms/input/Input"
 import { Separator } from "../../atoms/separator/separator"
 import {

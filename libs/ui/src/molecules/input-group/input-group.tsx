@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 
 import { cn } from "@nx-w/utils"
 
-import { Button } from "./../../atoms/button/Button"
+import { Button } from "../../atoms/button/button"
 import { Input } from "./../../atoms/input/Input"
 import { Textarea } from "./../../atoms/textarea/textarea"
 

@@ -3,15 +3,11 @@
   "compileOnSave": false,
   "files": [],
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./*"]
     }
   },
   "references": [
-    {
-      "path": "./apps/website-e2e"
-    },
     {
       "path": "./apps/website"
     },
@@ -23,6 +19,27 @@
     },
     {
       "path": "./libs/themes"
+    },
+    {
+      "path": "./apps/zikas-dashboard-e2e"
+    },
+    {
+      "path": "./apps/zikas-dashboard"
+    },
+    {
+      "path": "./libs"
+    },
+    {
+      "path": "./libs/hooks"
+    },
+    {
+      "path": "./libs/providers"
+    },
+    {
+      "path": "./apps/javamas-e2e"
+    },
+    {
+      "path": "./apps/javamas"
     }
   ]
 }

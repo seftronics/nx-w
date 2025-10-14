@@ -3,8 +3,7 @@
   "compilerOptions": {
     "allowJs": true,
     "outDir": "out-tsc/playwright",
-    "sourceMap": false,
-    "skipLibCheck": true,
+    "sourceMap": false
   },
   "include": [
     "**/*.ts",

@@ -1,16 +1,23 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "rootDir": "src",
     "outDir": "../../dist/libs/themes",
+    "rootDir": "./src",
     "module": "ESNext",
     "moduleResolution": "bundler",
     "target": "ES2020",
     "tsBuildInfoFile": "dist/tsconfig.lib.tsbuildinfo",
     "emitDeclarationOnly": false,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "noEmitOnError": true,
     "forceConsistentCasingInFileNames": true,
-    "types": ["node"],
+    "types": ["node"]
   },
-  "include": ["src/**/*.ts"],
+  "include": ["./**/*.ts", "./src/**/*.tsx"],
   "references": []
+
 }

@@ -1,11 +1,8 @@
-import { tenantATheme } from './lib/tenant-a.theme';
-import { tenantBTheme } from './lib/tenant-b.theme';
-import { defaultTheme } from './lib/default.theme';
+import { javamasTheme } from './lib/javamas.config';
+import { zikasTheme } from './lib/zikas.config';
 
 export const THEMES = {
-  tenantA: tenantATheme,
-  tenantB: tenantBTheme,
-  default: defaultTheme,
+	javamas: javamasTheme,
+	zikas: zikasTheme,
 };
 
-export type Theme = typeof defaultTheme;

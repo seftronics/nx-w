@@ -8,7 +8,7 @@ import {
 } from "lucide-react"
 
 import { cn } from "@nx-w/utils"
-import { Button, buttonVariants } from "./../../atoms/button/Button"
+import { Button, buttonVariants } from "../../atoms/button/button"
 
 function Pagination({ className, ...props }: React.ComponentProps<"nav">) {
   return (

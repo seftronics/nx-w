@@ -18,8 +18,11 @@
     "target": "es2022",
     "customConditions": ["@nx-w/source"],
     "paths": {
+      "@nx-w/hooks": ["./libs/hooks/src/index.ts"],
+      "@nx-w/themes": ["./libs/themes/src/index.ts"],
       "@nx-w/ui": ["./libs/ui/src/index.ts"],
-      "@nx-w/utils": ["./libs/utils/src/index.ts"]
+      "@nx-w/utils": ["./libs/utils/src/index.ts"],
+      "@nx-w/providers": ["./libs/providers/src/index.ts"]
     }
   }
 }

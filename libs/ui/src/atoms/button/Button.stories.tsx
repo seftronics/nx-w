@@ -1,37 +1,34 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Button } from "./Button";
+import { useActiveTheme } from '@nx-w/hooks';
+import { Button, ButtonProps } from './button';
+import type { Meta, StoryObj } from '@storybook/nextjs';
+import { Theme } from './types';
 
 const meta: Meta<typeof Button> = {
-  title: "Atoms/Button",
   component: Button,
-  tags: ["autodocs"],
-  args: {
-    children: "Button",
-  },
+  title: 'Atoms/Button',
 };
-
 export default meta;
-type Story = StoryObj<typeof Button>;
 
-export const Default: Story = {};
+interface ThemedButtonArgs extends ButtonProps {
+  showThemeName?: boolean;
+}
 
-export const Destructive: Story = {
+interface FallbackTheme extends Theme {
+  button: { [key: string]: string | undefined; default?: string; destructive?: string; outline?: string; secondary?: string; ghost?: string; link?: string };
+}
+
+export const ThemedButton: StoryObj<ThemedButtonArgs> = {
   args: {
-    variant: "destructive",
-    children: "Destructive",
+    children: 'Button',
+    variant: 'default',
+    size: 'default',
+    showThemeName: true,
   },
-};
-
-export const Outline: Story = {
-  args: {
-    variant: "outline",
-    children: "Outline",
-  },
-};
-
-export const Disabled: Story = {
-  args: {
-    disabled: true,
-    children: "Disabled",
+  render: (args: ThemedButtonArgs) => {
+    const { theme } = useActiveTheme();
+    const fallbackTheme: FallbackTheme = { button: {} };
+    return (
+      <Button {...args} theme={theme ?? fallbackTheme} />
+    );
   },
 };

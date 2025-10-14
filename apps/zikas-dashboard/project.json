@@ -1,0 +1,9 @@
+{
+  "name": "@nx-w/zikas-dashboard",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/zikas-dashboard",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project @nx-w/zikas-dashboard --web",
+  "targets": {}
+}
