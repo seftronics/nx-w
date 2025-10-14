@@ -1,13 +1,12 @@
-// import { useActiveTheme } from '@nx-w/hooks';
 /* eslint-disable @typescript-eslint/ban-ts-comment */
+/* eslint-disable @nx/enforce-module-boundaries */
 import { Preview } from '@storybook/react-vite';
 
 import '../src/globals.css';
 import type { StoryFn } from '@storybook/react';
 
-// eslint-disable-next-line @nx/enforce-module-boundaries
 import { ThemeProvider } from '@nx-w/providers';
-import { THEMES } from '@nx-w/themes';
+import { THEMES } from '@nx-w/config-ui';
 
 type ThemeName = 'javamas' | 'zikas';
 type ThemeMode = 'light' | 'dark';

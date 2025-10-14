@@ -401,6 +401,8 @@ importers:
 
   libs: {}
 
+  libs/config-ui: {}
+
   libs/hooks: {}
 
   libs/providers: {}

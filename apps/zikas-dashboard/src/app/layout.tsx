@@ -1,4 +1,6 @@
 import './global.css';
+import { ThemeProvider } from '@nx-w/providers';
+import { THEMES } from '@nx-w/config-ui';
 
 export const metadata = {
   title: 'Welcome to zikas-dashboard',
@@ -11,9 +13,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-      <html lang="en">
+    <html lang="en">
         <body>
-            {children}
+          <ThemeProvider value={THEMES.zikas}>{children}</ThemeProvider>
         </body>
     </html>
   );

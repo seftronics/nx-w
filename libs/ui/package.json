@@ -12,6 +12,10 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "default": "./dist/index.js"
+    },
+    "./atoms/button/get-button-variants" :{
+      "import": "./dist/atoms/button/get-button-variants.js",
+      "require": "./src/atoms/button/get-button-variants.js"
     }
   },
   "devDependencies": {

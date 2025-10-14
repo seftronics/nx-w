@@ -1,6 +1,8 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "baseUrl": ".",
+    "ignoreDeprecations": "6.0",
     "jsx": "preserve",
     "noEmit": true,
     "emitDeclarationOnly": false,
@@ -50,5 +52,15 @@
     "eslint.config.cjs",
     "eslint.config.mjs"
   ],
-  "references": []
+  "references": [
+    {
+      "path": "../../libs/ui"
+    },
+    {
+      "path": "../../libs/config-ui"
+    },
+    {
+      "path": "../../libs/providers"
+    }
+  ]
 }

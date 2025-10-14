@@ -1,7 +1,7 @@
 import { useActiveTheme } from '@nx-w/hooks';
-import { Button, ButtonProps } from './button';
+import { Button } from './button';
 import type { Meta, StoryObj } from '@storybook/nextjs';
-import { Theme } from './types';
+import type { FallbackTheme } from './button-theme.types';
 
 const meta: Meta<typeof Button> = {
   component: Button,
@@ -9,26 +9,17 @@ const meta: Meta<typeof Button> = {
 };
 export default meta;
 
-interface ThemedButtonArgs extends ButtonProps {
-  showThemeName?: boolean;
-}
+const fallbackTheme: FallbackTheme = { button: {} };
 
-interface FallbackTheme extends Theme {
-  button: { [key: string]: string | undefined; default?: string; destructive?: string; outline?: string; secondary?: string; ghost?: string; link?: string };
-}
-
-export const ThemedButton: StoryObj<ThemedButtonArgs> = {
+export const ThemedButton: StoryObj = {
   args: {
     children: 'Button',
     variant: 'default',
     size: 'default',
     showThemeName: true,
   },
-  render: (args: ThemedButtonArgs) => {
+  render: (args) => {
     const { theme } = useActiveTheme();
-    const fallbackTheme: FallbackTheme = { button: {} };
-    return (
-      <Button {...args} theme={theme ?? fallbackTheme} />
-    );
+    return <Button {...args} theme={theme ?? fallbackTheme} />;
   },
 };

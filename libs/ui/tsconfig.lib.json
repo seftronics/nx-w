@@ -42,7 +42,8 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     "../themes/src/**/*.ts",
-    "../themes/src/**/*.tsx"
+    "../themes/src/**/*.tsx",
+    "src/organisms/alert-dialog/alert-dialog.tzt"
   ],
   "references": [
     {
@@ -52,7 +53,10 @@
       "path": "../utils/tsconfig.lib.json"
     },
     {
-      "path": "../themes/tsconfig.lib.json"
+      "path": "../config-ui/tsconfig.lib.json"
+    },
+    {
+      "path": "../providers/tsconfig.lib.json"
     }
   ]
 }

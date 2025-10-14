@@ -2,13 +2,13 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "dist",
-    
+
     "types": [
       "node",
       "@nx/react/typings/cssmodule.d.ts",
       "@nx/react/typings/image.d.ts"
     ],
-    "rootDir": "../../", 
+    "rootDir": "../../",
     "jsx": "react-jsx",
     "module": "esnext",
     "moduleResolution": "bundler",
@@ -32,10 +32,16 @@
   ],
   "include": [
     "src/**/*.js",
-     "src/**/*.jsx", 
-     "src/**/*.ts", 
-     "src/**/*.tsx", 
-     "../../libs/themes/src/**/*.ts", 
-     "../../libs/themes/src/**/*.tsx"
-, "../hooks/src/use-thema/use-active-theme.ts"  ]
+    "src/**/*.jsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "../../libs/themes/src/**/*.ts",
+    "../../libs/themes/src/**/*.tsx",
+    "../hooks/src/use-thema/use-active-theme.ts"
+  ],
+  "references": [
+    {
+      "path": "../config-ui/tsconfig.lib.json"
+    }
+  ]
 }
