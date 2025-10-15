@@ -1,43 +1,63 @@
-import * as React from "react";
-import { Slot } from "@radix-ui/react-slot";
-import { useThemeButtonVariants, defaultTheme } from "./get-button-variants";
-import type { Theme } from "./button-theme.types";
-import type { ButtonVariant, ButtonSize } from "./button-types";
-import { cn } from "@nx-w/utils";
+import { Slot } from '@radix-ui/react-slot';
+import { cva } from 'class-variance-authority';
 
-export type ButtonProps = React.ComponentProps<'button'> & {
-  variant?: ButtonVariant;
-  size?: ButtonSize;
+type ThemeButtonObj = {
+  base?: string;
+  variants?: Record<string, string>;
+  sizes?: Record<string, string>;
+};
+
+type ButtonProps = React.ComponentProps<'button'> & {
   asChild?: boolean;
-  showThemeName?: boolean;
-  theme: Theme;
+  themeObj?: ThemeButtonObj;
+  variant?: string;
+  size?: string;
 };
 
 function Button({
-  variant = 'default',
-  size,
-  asChild = false,
-  showThemeName = false,
-  theme,
   className,
+  variant = 'default',
+  size = 'default',
+  asChild = false,
+  themeObj,
   ...props
 }: ButtonProps) {
   const Comp = asChild ? Slot : 'button';
-  const buttonVariants = useThemeButtonVariants(defaultTheme);
 
-  const resolvedClassName =
-    className && className.trim().length > 0
-      ? className
-      : theme.button?.[variant] || '';
-
-  return (
-    <Comp
-      data-slot="button"
-      className={cn(buttonVariants({ variant, size }), resolvedClassName)}
-      {...props}
-    >
-      {props.children}
-    </Comp>
+  const buttonVariants = cva(
+    themeObj?.base || '',
+    {
+      variants: {
+        variant: themeObj?.variants || {
+          default: '',
+          destructive: '',
+          outline: '',
+          secondary: '',
+          ghost: '',
+          link: '',
+        },
+        size: themeObj?.sizes || {
+          default: '',
+          sm: '',
+          lg: '',
+          icon: '',
+          'icon-sm': '',
+          'icon-lg': '',
+        },
+      },
+      defaultVariants: {
+        variant: 'default',
+        size: 'default',
+      },
+    }
   );
+  return (
+      <Comp
+        data-slot="button"
+        className={buttonVariants({ variant, size, className })}
+        {...props}
+      />
+    );
 }
-export { Button, ButtonVariant as buttonVariants };
+
+export { Button };

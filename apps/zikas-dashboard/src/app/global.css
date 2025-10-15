@@ -1,3 +1,18 @@
-@import "../../../../libs/ui/src/globals.css";
+@import '../../../../libs/ui/src/globals.css';
 @source "../../src/**/*.{ts,tsx,js,jsx}";
-@source "../../../../libs/ui/src/**/*.{ts,tsx,js,jsx}"
+@source "../../../../libs/ui/src/**/*.{ts,tsx,js,jsx}";
+
+:root {
+  --color-primary: #1e40af; 
+  --color-secondary: #1e3a8a; 
+  --color-white: #f59e0b; 
+  --color-dark: #111827;
+  --color-accent: #10b981;
+  --color-green: #10b981;
+  --color-red: #ef4444;
+  --color-disabled: #f59e0b;
+  --color-blue-border: #3b82f6;
+  --color-bg: #f3f4f6;
+  --color-grey: #6b7280;
+  --color-grey-border: #d1d5db;
+}

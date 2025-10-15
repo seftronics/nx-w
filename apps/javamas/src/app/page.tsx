@@ -6,14 +6,13 @@ import { useActiveTheme } from '@nx-w/hooks';
 export default function Index() {
   const theme = useActiveTheme();
   return (
-    <div className="mx-1 text-xs text-gray-500">
+    <div>
       <Button
-        theme={theme}
-        variant='default'
-        showThemeName
+        themeObj={typeof theme.button === 'object' ? theme.button : undefined}
+        variant="ghost"
       >
         Javamas
       </Button>
     </div>
-);
+  );
 }

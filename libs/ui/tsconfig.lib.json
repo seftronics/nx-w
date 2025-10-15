@@ -43,7 +43,8 @@
     "src/**/*.tsx",
     "../themes/src/**/*.ts",
     "../themes/src/**/*.tsx",
-    "src/organisms/alert-dialog/alert-dialog.tzt"
+    "src/organisms/alert-dialog/alert-dialog.tzt",
+    "src/atoms/checkbox/checkbox.stories.tsx"
   ],
   "references": [
     {

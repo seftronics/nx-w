@@ -6,11 +6,10 @@ import { useActiveTheme } from '@nx-w/hooks';
 export default function Index() {
   const theme = useActiveTheme();
   return (
-    <div className="mx-1 text-xs text-gray-500">
-      <Button
-        theme={theme}
-        variant='default'
-        showThemeName
+    <div>
+     <Button
+        themeObj={typeof theme.button === 'object' ? theme.button : undefined}
+        variant="ghost"
       >
         Zikas
       </Button>

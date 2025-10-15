@@ -40,20 +40,7 @@ export const globalTypes = {
       ],
       showName: true,
     },
-  },
-  mode: {
-    name: 'Mode',
-    description: 'Light or dark mode',
-    defaultValue: 'light',
-    toolbar: {
-      icon: 'circlehollow',
-      items: [
-        { value: 'light', title: 'Light' },
-        { value: 'dark', title: 'Dark' },
-      ],
-      showName: true,
-    },
-  },
+  }
 };
 
 
