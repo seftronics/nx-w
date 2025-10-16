@@ -1,6 +1,5 @@
 import { javamasTheme } from './lib/themes/javamas.config';
-import { ZikasTheme } from './lib/themes/zikas-dashboard.config';
-
+import { ZikasTheme } from './lib/themes/zikas_dashboard.config';
 
 export const THEMES = {
   javamas: javamasTheme,
