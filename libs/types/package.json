@@ -1,5 +1,5 @@
 {
-  "name": "@nx-w/libs",
+  "name": "@nx-w/types",
   "version": "0.0.1",
   "private": true,
   "type": "module",
@@ -7,12 +7,12 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
+    "./package.json": "./package.json",
     ".": {
-      "types": "./src/index.ts",
-      "import": "./src/index.ts",
-      "default": "./src/index.ts"
-    },
-    "./package.json": "./package.json"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
   },
   "dependencies": {
     "tslib": "^2.3.0"

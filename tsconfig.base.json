@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "composite": true,
     "declarationMap": true,
     "emitDeclarationOnly": true,
@@ -20,6 +21,7 @@
       "@nx-w/config-ui": ["./libs/config-ui/src/index.ts"],
       "@nx-w/hooks": ["./libs/hooks/src/index.ts"],
       "@nx-w/providers": ["./libs/providers/src/index.ts"],
+      "@nx-w/types": ["./libs/types/src/index.ts"],
       "@nx-w/ui": ["./libs/ui/src/index.ts"],
       "@nx-w/utils": ["./libs/utils/src/index.ts"]
     }

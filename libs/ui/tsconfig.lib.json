@@ -2,20 +2,12 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "dist",
-    "types": [
-      "node",
-      "@nx/react/typings/cssmodule.d.ts",
-      "@nx/react/typings/image.d.ts",
-      "vite/client"
-    ],
-    "rootDir": "../../",
+    "rootDir": "src",
+    "types": ["node", "vite/client"],
     "jsx": "react-jsx",
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "tsBuildInfoFile": "dist/tsconfig.lib.tsbuildinfo",
-    "paths": {
-      "@nx-w/utils": ["./../utils/src/index.ts"]
-    }
+    "tsBuildInfoFile": "dist/tsconfig.lib.tsbuildinfo"
   },
   "exclude": [
     "out-tsc",
@@ -40,13 +32,12 @@
     "src/**/*.js",
     "src/**/*.jsx",
     "src/**/*.ts",
-    "src/**/*.tsx",
-    "../themes/src/**/*.ts",
-    "../themes/src/**/*.tsx",
-    "src/organisms/alert-dialog/alert-dialog.tzt",
-    "src/atoms/checkbox/checkbox.stories.tsx"
+    "src/**/*.tsx"
   ],
   "references": [
+    {
+      "path": "../types/tsconfig.lib.json"
+    },
     {
       "path": "../hooks/tsconfig.lib.json"
     },

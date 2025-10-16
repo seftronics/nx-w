@@ -2,11 +2,6 @@
   "extends": "./tsconfig.base.json",
   "compileOnSave": false,
   "files": [],
-  "compilerOptions": {
-    "paths": {
-      "@/*": ["./*"]
-    }
-  },
   "references": [
     {
       "path": "./libs/ui"
@@ -31,6 +26,9 @@
     },
     {
       "path": "./libs/config-ui"
+    },
+    {
+      "path": "./libs/types"
     }
   ]
 }
